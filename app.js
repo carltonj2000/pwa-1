@@ -1,5 +1,4 @@
 const attendees = document.querySelector("#attendees");
-console.log("att", attendees);
 fetch("https://jsonplaceholder.typicode.com/users")
   .then(response => response.json())
   .then(data => {
