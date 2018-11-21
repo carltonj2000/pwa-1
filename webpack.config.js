@@ -14,6 +14,18 @@ module.exports = {
       {
         from: "./src/index.html",
         to: "index.html"
+      },
+      {
+        from: "./src/manifest.json",
+        to: "manifest.json"
+      },
+      {
+        from: "./src/cj-utils2.png",
+        to: "cj-utils2.png"
+      },
+      {
+        from: "./src/cj-utils2-144.png",
+        to: "cj-utils2-144.png"
       }
     ]),
     new workboxWebpackPlugin.InjectManifest({
