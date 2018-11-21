@@ -4,7 +4,7 @@
   "description": "service worker",
   "main": "app.js",
   "scripts": {
-    "build": "workbox generateSW workbox-config.js"
+    "build": "workbox injectManifest workbox-config.js"
   },
   "keywords": [],
   "author": "Carlton Joseph",
