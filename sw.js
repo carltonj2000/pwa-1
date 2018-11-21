@@ -29,12 +29,14 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "100d38d90028774105c5cec674c5e483"
+    "revision": "68cbda6226654ef64381def43b8237d9"
   },
   {
     "url": "workbox-config.js",
-    "revision": "2a5130c5c0adbb75c11ff6636f008fb6"
+    "revision": "515c0dfc4f6d697e4d762b95a0e5258d"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
+
+workbox.routing.registerRoute(/https:\/\/jsonplaceholder\.typicode\.com/, workbox.strategies.networkFirst(), 'GET');
