@@ -42,12 +42,12 @@
     <script src="./app.js"></script>
     <script>
       if ("serviceWorker" in navigator) {
-        navigator.serviceWorker
-          .register("sw.js")
-          .then(registration => {
-            console.log(registration);
-          })
-          .catch(e => console.error("sw failed to register with error => ", e));
+        window.addEventListener("load", () => {
+          navigator.serviceWorker
+            .register("sw.js")
+            .then(console.log)
+            .catch(onsole.error);
+        });
       }
     </script>
   </body>

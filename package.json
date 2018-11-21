@@ -1,0 +1,15 @@
+{
+  "name": "pwa-1",
+  "version": "1.0.0",
+  "description": "service worker",
+  "main": "app.js",
+  "scripts": {
+    "build": "workbox generateSW workbox-config.js"
+  },
+  "keywords": [],
+  "author": "Carlton Joseph",
+  "license": "ISC",
+  "devDependencies": {
+    "workbox-cli": "^3.6.3"
+  }
+}
